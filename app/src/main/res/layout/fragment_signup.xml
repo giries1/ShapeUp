@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+
+    <EditText
+        android:id="@+id/TEmail1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/TPassword1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="date"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BSignup"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="SignUp" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+</LinearLayout>

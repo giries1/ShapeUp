@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContactUs">
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="157dp"
+        android:layout_height="50dp"
+       android:layout_margin="25dp"
+        android:text="ContactUs"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="18dp"
+        android:text="Thank you for your interest in ShapeUp. We value your feedback, questions, and inquiries. Our dedicated team is here to assist you in any way we can." />
+
+
+
+
+</LinearLayout>

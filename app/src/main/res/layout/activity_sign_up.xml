@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+
+    <EditText
+        android:id="@+id/TEmail1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/TEmail2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Confirm Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/TPassword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/TPassword2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/bSignup"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="SignUp" />
+
+
+</LinearLayout>

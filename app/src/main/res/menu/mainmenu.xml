@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/discover"
+        android:title="Discover" />
+
+    <item android:id="@+id/workout"
+        android:title="Workout" />
+
+    <item android:id="@+id/exercises"
+        android:title="Exercises" />
+
+    <item android:id="@+id/profile"
+        android:title="Profile" />
+
+    <item android:id="@+id/aboutUs"
+        android:title="AboutUs" />
+
+    <item android:id="@+id/contactUs"
+        android:title="ContactUs" />
+</menu>

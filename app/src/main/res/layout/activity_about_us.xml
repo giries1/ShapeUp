@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="AboutUs"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to ShapeUp, your trusted fitness companion on your journey to a healthier, happier you!" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Mission:
+
+At ShapeUp, we are committed to promoting a healthier lifestyle by providing you with the tools, guidance, and motivation you need to achieve your fitness goals. We believe that fitness is not just about physical strength but also about mental well-being. Our mission is to inspire and empower you to live a balanced and active life.
+" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="The Team:
+
+We are a passionate team of fitness enthusiasts, nutritionists, trainers, and app developers who share a common goal - to make fitness accessible to everyone. Our diverse backgrounds and expertise come together to create an app that caters to users of all fitness levels, from beginners to advanced athletes." />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="Join Us on this Fitness Journey
+
+Thank you for choosing ShapeUp as your fitness companion. We look forward to helping you achieve your fitness goals and being a part of your journey to a healthier, happier life.
+
+Remember, fitness is not just a destination; it's a way of life.
+
+Start your journey today with ShapeUp!" />
+
+</LinearLayout>
