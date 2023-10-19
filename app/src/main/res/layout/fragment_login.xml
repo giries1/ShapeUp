@@ -16,7 +16,11 @@
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:hint="Email" />
+        android:layout_marginTop="-100dp"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:textColorHint="#E4DBDB"
+        />
 
     <EditText
         android:layout_margin="15dp"
@@ -25,7 +29,10 @@
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="password" />
+        android:hint="password"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFCFC"
+        />
 
     <Button
         android:id="@+id/BLogin"

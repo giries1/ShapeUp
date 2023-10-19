@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import static androidx.core.content.ContentProviderCompat.requireContext;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.core.view.GravityCompat;
@@ -9,9 +11,14 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RatingBar;
+import android.widget.Toast;
 
 public class Profile extends AppCompatActivity {
 
@@ -19,6 +26,7 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
     }
 
     @SuppressLint("RestrictedApi")
@@ -63,7 +71,7 @@ public class Profile extends AppCompatActivity {
 
     }
 
-    public void showAlertDialog(View v){
+    public void showAlertDialogLogout(View v){
 
 
             AlertDialog.Builder adb = new AlertDialog.Builder(Profile.this);
@@ -89,7 +97,48 @@ public class Profile extends AppCompatActivity {
 
                 }
 
-        };
+    // Inside your activity or fragment
+    public void showAlertDialogFeedBack(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.custom_dialog_layout, null);
+        builder.setView(dialogView);
+
+        final RatingBar ratingBar = dialogView.findViewById(R.id.ratingBar);
+        final EditText feedbackEditText = dialogView.findViewById(R.id.feedbackEditText);
+        Button cancelButton = dialogView.findViewById(R.id.cancelButton);
+        Button submitButton = dialogView.findViewById(R.id.submitButton);
+
+        final AlertDialog dialog = builder.create();
+
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Profile.this, "Thank you,Report submitted", Toast.LENGTH_SHORT).show();
+                // Get the user's rating and feedback text
+                float rating = ratingBar.getRating();
+                String feedback = feedbackEditText.getText().toString();
+
+
+                // You can handle the rating and feedback data as per your application's logic here
+
+                // Close the dialog
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+
+    }
+}
+
 
 
 

@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/shapeupback"
+    >
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,6 +17,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="300dp"
         android:text="Welcome To ShapeUp"
+        android:textColor="@color/white"
         android:textSize="30dp"
         />
 
