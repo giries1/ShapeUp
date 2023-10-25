@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@android:color/background_light"
+    android:layout_marginTop="80dp"
     tools:context=".MainActivity">
 
     <EditText
@@ -16,6 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="Exercise Name"
+        android:textColorHint="#607596"
         android:minHeight="48dp" />
 
     <EditText
@@ -24,6 +26,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="Sets"
+        android:inputType="number"
+        android:textColorHint="#607596"
+        android:layout_marginTop="7dp"
         android:minHeight="48dp" />
 
     <EditText
@@ -32,6 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="Reps"
+        android:inputType="number"
+        android:textColorHint="#607596"
+        android:layout_marginTop="7dp"
         android:minHeight="48dp" />
 
     <EditText
@@ -40,12 +48,30 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="Weight"
+        android:inputType="numberDecimal"
+        android:textColorHint="#607596"
+        android:layout_marginTop="7dp"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/restSecsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Rest time(sec)"
+        android:inputType="number"
+        android:textColorHint="#607596"
+        android:layout_marginTop="7dp"
         android:minHeight="48dp" />
 
     <Button
+        android:layout_marginTop="20dp"
+        android:background="#24467E"
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Insert Exercise"
+        android:onClick="insetExerciseData"
         android:id="@+id/insertExerciseButton"/>
 
 </LinearLayout>

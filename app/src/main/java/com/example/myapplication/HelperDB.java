@@ -12,36 +12,28 @@ public class HelperDB extends SQLiteOpenHelper {
     public HelperDB(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
-public HelperDB(Context context){
+
+
+    public static final String DB_FILE="workout_plans2.db";
+
+    public static final String WorkoutPlan_Table="WorkoutPlan";//Table name
+
+    public static final String ExerciseName="ExerciseName";
+    public static final String Sets= "Sets" ;
+    public static final String Reps="Reps";
+    public static final String Weight="Weight";
+    public static final String RestSecs="RestSecs";
+
+
+    public HelperDB(Context context){
         super(context,DB_FILE,null,1);
-}
-
-    public static final String DB_FILE="myUserProfiles_info.db";
-
-    public static final String userProfiles_Table="userProfiles";//Table name
-
-    public static final String username="userProfiles_username";//username
-    public static final String id="id";//id
-    public static final String Age="age";//age
-    public static final String Height="height";//height
-    public static final String fitnessGoals="fitnessGoals";//fitnessGoals
-    public static final String workoutPreferences="workoutPreferences";//workoutPreferences
-
-
-
-
+    }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-       String st="CREATE TABLE IF NOT EXIST"+userProfiles_Table;
-        st+= " ( " + username + "Text";
-        st+=  Age + "INTEGER";
-        st+=  id + "INTEGER";
-        st+=  fitnessGoals + "Text";
-        st+=  workoutPreferences +"Text";
-        st+=  Height +"REAL";
+        String st="CREATE TABLE IF NOT EXISTS "+WorkoutPlan_Table+" ( ";
+        st+=ExerciseName+" TEXT, "+Sets+" INTEGER, "+Reps+" INTEGER, "+Weight+" REAL, "+RestSecs+" INTEGER);";
         db.execSQL(st);
-        
     }
 
     @Override
